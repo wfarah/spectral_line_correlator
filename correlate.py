@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 spec_res = 64e6 #MHz
 
 # Main assumption: CPU is providing data with only 1 (big) frequency channel
-NANTS  = 20
+NANTS  = 28
 NFREQS = 1 
 NTIME  = 262144
 NFREQ_FFT = NTIME
@@ -70,7 +70,7 @@ block_corr = np.zeros(shape=(nblines, zoom_n_freqs, NPOLS*NPOLS),
 # Now to correlate
 
 # We index the correlation block with ibline
-ibline = 1
+ibline = 0
 
 # Doing auto-correlations first
 for iant1 in range(NANTS):
